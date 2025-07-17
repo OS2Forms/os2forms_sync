@@ -9,6 +9,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+- D10 compatibility - updating RequestStack
+
 ## [1.1.3]
 
 ### Updated
