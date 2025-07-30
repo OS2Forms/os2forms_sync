@@ -12,6 +12,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 ### Updated
 
 - Update GitHub workflows runner images
+- D10 compatibility - updating RequestStack
 
 ## [1.1.3]
 
