@@ -11,8 +11,14 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Updated
 
+## [1.2.1]
+
 - Update GitHub workflows runner images
 - D10 compatibility - updating RequestStack
+
+## [1.2.0]
+
+- Drupal 10 compatibility
 
 ## [1.1.3]
 
@@ -44,7 +50,9 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Added OS2Forms sync module
 
-[Unreleased]: https://github.com/itk-dev/os2forms_sync/compare/1.1.3...HEAD
+[Unreleased]: https://github.com/itk-dev/os2forms_sync/compare/1.2.1...HEAD
+[1.2.1]: https://github.com/itk-dev/os2forms_sync/compare/1.2.0...1.2.1
+[1.2.0]: https://github.com/itk-dev/os2forms_sync/compare/1.1.3...1.2.0
 [1.1.3]: https://github.com/itk-dev/os2forms_sync/compare/1.1.2...1.1.3
 [1.1.2]: https://github.com/itk-dev/os2forms_sync/compare/1.1.1...1.1.2
 [1.1.1]: https://github.com/itk-dev/os2forms_sync/compare/1.1.0...1.1.1

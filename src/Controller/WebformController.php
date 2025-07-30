@@ -126,7 +126,7 @@ final class WebformController extends ControllerBase {
           $form = $this->webformHelper->getSubmissionForm($attributes['elements']);
           // Make sure that the form cannot be submitted (hopefully).
           $form['#attributes']['onsubmit'] = 'return false';
-          $renderedForm = $this->renderer->renderPlain($form);
+          $renderedForm = $this->renderer->renderInIsolation($form);
         }
         catch (\Throwable $t) {
           $form = [
@@ -137,7 +137,7 @@ final class WebformController extends ControllerBase {
               ],
             ],
           ];
-          $renderedForm = $this->renderer->renderPlain($form);
+          $renderedForm = $this->renderer->renderInIsolation($form);
         }
 
         $sourceUrl = $webform->sourceUrl;
