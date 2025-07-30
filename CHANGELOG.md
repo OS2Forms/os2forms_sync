@@ -11,7 +11,6 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Updated
 
-
 ## [1.2.1]
 
 - Update GitHub workflows runner images
