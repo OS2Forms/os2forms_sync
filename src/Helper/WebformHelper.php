@@ -175,6 +175,26 @@ final class WebformHelper {
    * @phpstan-return array<string, mixed>
    */
   public function getSubmissionForm(array $elements): array {
+
+    // Webforms that are rendered here are not a part of the database yet.
+    // As a consequence, any element that attempts to load the webform will be
+    // unable to do so.
+    // Wizard pages attempt to do so in WebformWizardPage::showPage, so we
+    // display these as 'details' instead and indicate that they originally
+    // are pages in their titles.
+    $isFirst = TRUE;
+    foreach ($elements as &$element) {
+      if (($element['#type'] ?? NULL) === 'webform_wizard_page') {
+        if ($isFirst) {
+          $element['#open'] = TRUE;
+          $isFirst = FALSE;
+        }
+
+        $element['#type'] = 'details';
+        $element['#title'] = (string) $this->t('%title% (wizard page)', ['%title%' => $element['#title']]);
+      }
+    }
+
     $webform = Webform::create([
       'id' => (new Random())->name(32),
       'elements' => Yaml::encode($elements),
