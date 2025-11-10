@@ -9,6 +9,9 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+- Handled webform categories now being an array.
+- Rendered wizard pages as 'details' elements in previews.
+
 ### Updated
 
 ## [1.2.1]
