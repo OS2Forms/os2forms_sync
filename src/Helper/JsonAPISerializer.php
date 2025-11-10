@@ -80,12 +80,14 @@ final class JsonAPISerializer {
         return in_array($key, [
           'title',
           'description',
-          'category',
+          'categories',
           'elements',
         ]);
       },
       ARRAY_FILTER_USE_KEY
     );
+
+    $attributes['categories'] = json_encode($attributes['categories']);
 
     $attributes = array_map('html_entity_decode', $attributes);
 

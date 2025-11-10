@@ -184,7 +184,7 @@ final class WebformController extends ControllerBase {
               '#type' => 'container',
               '#attributes' => [
                 'class' => ['category'],
-                'data-indexed' => strip_tags($attributes['category']),
+                'data-indexed' => implode(', ', json_decode($attributes['categories'])),
               ],
 
               'label' => [
@@ -199,7 +199,7 @@ final class WebformController extends ControllerBase {
                 '#attributes' => [
                   'class' => ['value'],
                 ],
-                '#value' => $attributes['category'],
+                '#value' => implode(', ', json_decode($attributes['categories'])),
               ],
             ],
 
