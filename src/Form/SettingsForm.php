@@ -21,7 +21,7 @@ final class SettingsForm extends FormBase {
    *
    * @var \Drupal\os2forms_sync\Helper\Settings
    */
-  private Settings $settings;
+  protected Settings $settings;
 
   /**
    * Constructor.

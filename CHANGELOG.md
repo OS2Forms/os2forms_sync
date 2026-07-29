@@ -9,6 +9,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+- Drupal 11 compatibility
+
 ## [1.3.0]
 
 - Handled webform categories now being an array.
